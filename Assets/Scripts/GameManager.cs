@@ -12,7 +12,7 @@ using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameManager Instance { get; private set; }
 
     public List<BestScoreEntry> bestScoreEntries;
     public BestScoreEntry newPlayerEntry;
